@@ -10,6 +10,6 @@
   {
 "name": "bio-page",
 "title": "Bio Page",
-"postTypes": "[page]"
+"postTypes": ["page"]
 }]
 }

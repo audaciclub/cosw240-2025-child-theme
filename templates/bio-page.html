@@ -1,0 +1,25 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"bio-page","layout":{"type":"default"}} -->
+<main class="wp-block-group bio-page">
+	<!-- wp:group {"className":"bio-header","layout":{"type":"default"}} -->
+	<div class="wp-block-group bio-header">
+		<!-- wp:post-featured-image {"isLink":false,"sizeSlug":"medium","className":"bio-portrait"} /-->
+
+		<!-- wp:group {"className":"bio-heading","layout":{"type":"default"}} -->
+		<div class="wp-block-group bio-heading">
+			<!-- wp:post-title {"level":1,"isLink":false,"className":"bio-name"} /-->
+
+			<!-- wp:heading {"level":2,"className":"bio-role","metadata":{"bindings":{"content":{"source":"core/post-meta","args":{"key":"cosw240_bio_title"}}}}} -->
+			<h2 class="wp-block-heading bio-role"></h2>
+			<!-- /wp:heading -->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:post-content {"className":"bio-content","layout":{"type":"default"}} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
