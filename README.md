@@ -1,1 +1,2 @@
-# cosw240-2025-child-theme
+# twentytwentyfive-child
+COSW240 Repo

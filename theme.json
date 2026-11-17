@@ -1,0 +1,15 @@
+{
+  "version": 3,
+  "styles": {
+    "color": {
+      "background": "#FFFFFF"
+    }
+  },
+
+"customTemplates": [
+  {
+"name": "bio-page",
+"title": "Bio Page",
+"postTypes": "[page]"
+}]
+}
