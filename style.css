@@ -3,7 +3,39 @@ Theme Name: Twenty Twenty-Five Child
 Theme URI: https://wordpress.org/themes/twentytwentyfive/
 Author: Lauren
 Author URI: https://alexg274.sg-host.com/
-Description: Twenty Twenty-Five Child emphasizes simplicity and adaptability. It offers flexible design options, supported by a variety of patterns for different page types, such as services and landing pages, making it ideal for building personal blogs, professional portfolios, online magazines, or business websites. Its templates cater to various blog styles, from text-focused to image-heavy layouts. Additionally, it supports international typography and diverse color palettes, ensuring accessibility and customization for users worldwide.
+Description: COSW240 child theme and Audaci Pulse design foundation.
 Template: twentytwentyfive
-Version: 0.0.1
+Version: 0.1.0
+Text Domain: audaci
 */
+
+/* Foundation only: specific templates/components are added in later phases. */
+:root {
+  --audaci-ink: var(--wp--preset--color--ink, #0e0f19);
+  --audaci-steel: var(--wp--preset--color--steel, #8b939c);
+  --audaci-red: var(--wp--preset--color--red, #b4151c);
+  --audaci-green: var(--wp--preset--color--green, #2f5b3a);
+  --audaci-lime: var(--wp--preset--color--lime, #9fcc2e);
+  --audaci-white: #fff;
+  --audaci-display: var(--wp--preset--font-family--geo, "Geo", "Arial Narrow", Impact, sans-serif);
+  --audaci-body: var(--wp--preset--font-family--martian-mono, "Martian Mono", ui-monospace, monospace);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { overflow-wrap: break-word; }
+body { margin: 0; }
+img, video { max-width: 100%; height: auto; }
+:focus-visible { outline: 3px solid var(--audaci-red); outline-offset: 3px; }
+::selection { background: var(--audaci-lime); color: var(--audaci-ink); }
+
+/* Apply these to Audaci sections; no sitewide template changes required. */
+.audaci-stripe { height: 7px; background: linear-gradient(to bottom, var(--audaci-red) 0 65%, var(--audaci-white) 65% 75%, var(--audaci-green) 75% 100%); }
+.audaci-groundline { border-bottom: 2px solid var(--audaci-ink); box-shadow: 0 6px 0 -5px var(--audaci-steel); }
+.audaci-shadow { box-shadow: 6px 6px 0 var(--audaci-lime); }
+.audaci-gloss { color: var(--audaci-white); background: linear-gradient(175deg, #232631 0%, var(--audaci-ink) 27%, #090a0e 100%); border-top: 1px solid var(--audaci-steel); }
+.audaci-tilt { display: inline-block; transform: skew(-6deg); transform-origin: left bottom; }
+.audaci-label { font: 600 .8rem/1.4 var(--audaci-body); letter-spacing: .07em; text-transform: uppercase; }
+
+@media (prefers-reduced-motion: reduce) {
+  .audaci-tilt { transition: none; }
+}
