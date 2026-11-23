@@ -5,41 +5,188 @@
     "color": {
       "defaultPalette": false,
       "palette": [
-        {"slug":"ink","name":"Ink Black","color":"#0e0f19"},
-        {"slug":"steel","name":"Cool Steel","color":"#8b939c"},
-        {"slug":"red","name":"Mahogany Red","color":"#b4151c"},
-        {"slug":"green","name":"Hunter Green","color":"#2f5b3a"},
-        {"slug":"lime","name":"Yellow Green","color":"#9fcc2e"},
-        {"slug":"white","name":"White","color":"#ffffff"}
+        {
+          "slug": "ink",
+          "name": "Ink Black",
+          "color": "#0e0f19"
+        },
+        {
+          "slug": "steel",
+          "name": "Cool Steel",
+          "color": "#8b939c"
+        },
+        {
+          "slug": "red",
+          "name": "Mahogany Red",
+          "color": "#b4151c"
+        },
+        {
+          "slug": "green",
+          "name": "Hunter Green",
+          "color": "#2f5b3a"
+        },
+        {
+          "slug": "lime",
+          "name": "Yellow Green",
+          "color": "#9fcc2e"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "color": "#ffffff"
+        }
       ]
     },
     "typography": {
       "fluid": true,
       "fontFamilies": [
-        {"name":"Geo","slug":"geo","fontFamily":"\"Geo\", \"Arial Narrow\", Impact, sans-serif"},
-        {"name":"Martian Mono","slug":"martian-mono","fontFamily":"\"Martian Mono\", ui-monospace, SFMono-Regular, Consolas, monospace"},
-        {"name":"Bytesized","slug":"bytesized","fontFamily":"\"Bytesized\", monospace"}
+        {
+          "name": "Geo",
+          "slug": "geo",
+          "fontFamily": "\"Geo\", \"Arial Narrow\", Impact, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Geo",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/geo/Geo-Regular.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Geo",
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/geo/Geo-Italic.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Martian Mono",
+          "slug": "martian-mono",
+          "fontFamily": "\"Martian Mono\", ui-monospace, SFMono-Regular, Consolas, monospace",
+          "fontFace": [
+            {
+              "fontFamily": "Martian Mono",
+              "fontWeight": "100 800",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/martian-mono/MartianMono-VariableFont_wdth,wght.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bytesized",
+          "slug": "bytesized",
+          "fontFamily": "\"Bytesized\", monospace",
+          "fontFace": [
+            {
+              "fontFamily": "Bytesized",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/bytesized/Bytesized-Regular.woff2"
+              ]
+            }
+          ]
+        }
       ],
       "fontSizes": [
-        {"slug":"small","name":"Small","size":"0.8125rem"},
-        {"slug":"medium","name":"Body","size":"1rem"},
-        {"slug":"large","name":"Large","size":"clamp(1.25rem, 2vw, 1.6rem)"},
-        {"slug":"x-large","name":"Display","size":"clamp(2.5rem, 7vw, 6rem)"}
+        {
+          "slug": "small",
+          "name": "Small",
+          "size": "0.8125rem"
+        },
+        {
+          "slug": "medium",
+          "name": "Body",
+          "size": "1rem"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "clamp(1.25rem, 2vw, 1.6rem)"
+        },
+        {
+          "slug": "x-large",
+          "name": "Display",
+          "size": "clamp(2.5rem, 7vw, 6rem)"
+        }
       ]
     },
-    "layout": {"contentSize":"760px","wideSize":"1200px"},
-    "spacing": {"units":["px","rem","em","%","vw"],"blockGap":true}
+    "layout": {
+      "contentSize": "760px",
+      "wideSize": "1200px"
+    },
+    "spacing": {
+      "units": [
+        "px",
+        "rem",
+        "em",
+        "%",
+        "vw"
+      ],
+      "blockGap": true
+    }
   },
   "styles": {
-    "color": {"background":"#ffffff","text":"#0e0f19"},
-    "typography": {"fontFamily":"var(--wp--preset--font-family--martian-mono)","fontSize":"var(--wp--preset--font-size--medium)","lineHeight":"1.65"},
+    "color": {
+      "background": "#ffffff",
+      "text": "#0e0f19"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--martian-mono)",
+      "fontSize": "var(--wp--preset--font-size--medium)",
+      "lineHeight": "1.65"
+    },
     "elements": {
-      "heading": {"typography":{"fontFamily":"var(--wp--preset--font-family--geo)","lineHeight":"1.05","fontWeight":"700"},"color":{"text":"#0e0f19"}},
-      "link": {"color":{"text":"#0e0f19"},"typography":{"textDecoration":"underline"}},
-      "button": {"color":{"background":"#0e0f19","text":"#ffffff"},"border":{"radius":"0"},"typography":{"fontFamily":"var(--wp--preset--font-family--martian-mono)","fontWeight":"600"}}
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--geo)",
+          "lineHeight": "1.05",
+          "fontWeight": "400"
+        },
+        "color": {
+          "text": "#0e0f19"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "#0e0f19"
+        },
+        "typography": {
+          "textDecoration": "underline"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "#0e0f19",
+          "text": "#ffffff"
+        },
+        "border": {
+          "radius": "0"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--martian-mono)",
+          "fontWeight": "600"
+        }
+      }
     }
   },
   "customTemplates": [
-    {"name":"bio-page","title":"Bio Page","postTypes":["page"]}
+    {
+      "name": "bio-page",
+      "title": "Bio Page",
+      "postTypes": [
+        "page"
+      ]
+    }
   ]
 }
